@@ -1,0 +1,16 @@
+page-home {
+
+    ion-title * {
+        margin-bottom: 5vh;
+    }
+    // background-image: url('../../assets/imgs/background.png')
+}
+
+img#logoMaisDoador{
+    width: 30vh;
+}
+
+ion-content#background {
+    background:url('../../assets/imgs/background.png') no-repeat;
+    background-size: cover;
+}
