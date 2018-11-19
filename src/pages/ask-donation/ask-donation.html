@@ -1,0 +1,72 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Solicitar Doação</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding center text-center>
+
+    <ion-item>
+      <ion-label floating>Nome do Paciente</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Local da Doação</ion-label>
+        <ion-select >
+          <ion-option value="hcssa">Hemocentro Coordenador - Salvador</ion-option>
+          <ion-option value="uchsa">UC Hemoba - Hospital Santo Antônio/Obras Sociais Irmã Dulce - Salvador</ion-option>
+          <ion-option value="uchs">UC Hemoba - Hospital do Subúrbio - Salvador</ion-option>
+          <ion-option value="uccaj">UC Hemoba - Sac Cajazeiras - Salvador</ion-option>
+          <ion-option value="hcres">Hemocentro Regional do Extremo Sul - Eunápolis</ion-option>
+          <ion-option value="hcrb">Hemocentro Regional Barreiras - Barreiras</ion-option>
+          <ion-option value="uctala">UCT Hemoba - Alagoinhas</ion-option>
+          <ion-option value="uctbru">UCT Hemoba - Brumado</ion-option>
+          <ion-option value="uctcam">UCT Hemoba - Camaçari</ion-option>
+          <ion-option value="uctfs">UCT Hemoba - Feira de Santana</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-list radio-group>
+      <ion-list-header>
+        Tipo Sanguíneo do Paciente
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label> A+</ion-label>
+        <ion-radio checked="true" value="Ap"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label> A-</ion-label>
+        <ion-radio value="An"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label> AB+</ion-label>
+        <ion-radio value="ABp"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>AB-</ion-label>
+        <ion-radio value="ABn"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>O+</ion-label>
+        <ion-radio value="Op"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>O-</ion-label>
+        <ion-radio value="On"></ion-radio>
+      </ion-item>
+    </ion-list>
+
+  <button ion-button color="danger" round (click)="salvar()">SALVAR</button>
+
+</ion-content>
