@@ -7,6 +7,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SignupPage } from '../pages/signup/signup';
+import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
+import { ForgotPassword2Page } from '../pages/forgot-password2/forgot-password2';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -19,6 +21,8 @@ import { RegisterInabilityPage } from '../pages/register-inability/register-inab
     MyApp,
     HomePage,
     SignupPage,
+    ForgotPasswordPage,
+    ForgotPassword2Page,
     DashboardPage,
     ProfilePage,
     TabsPage,
@@ -35,6 +39,9 @@ import { RegisterInabilityPage } from '../pages/register-inability/register-inab
     MyApp,
     HomePage,
     SignupPage,
+    ForgotPasswordPage,
+    ForgotPassword2Page,
+
     DashboardPage,
     ProfilePage,
     TabsPage,
