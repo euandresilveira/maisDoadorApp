@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ProfilePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { IonicPage, NavController, NavParams, LoadingController, App } from 'ionic-angular';
+import { ChangeNamePage } from '../change-name/change-name';
+import { ChangeEmailPage } from '../change-email/change-email';
+import { ChangePasswordPage } from '../change-password/change-password';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -15,11 +12,31 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ProfilePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, private app: App) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProfilePage');
+  changeName(){
+    this.navCtrl.push(ChangeNamePage);
   }
 
+  changeEmail(){
+    this.navCtrl.push(ChangeEmailPage);
+  }
+
+  changePassword(){
+    this.navCtrl.push(ChangePasswordPage);
+  }
+
+  signOut(){
+    let loading = this.loadingCtrl.create({
+      content: 'Por favor, aguarde...'
+    });
+  
+    loading.present();
+  
+    setTimeout(() => {
+      loading.dismiss();
+      this.app.getRootNav().setRoot(HomePage, {}, {animate: true, direction: 'forward'});
+    }, 2000);
+  }
 }

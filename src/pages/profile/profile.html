@@ -1,12 +1,46 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Perfil</ion-title>
+  <ion-navbar color="danger">
+    <ion-title>Minha Conta</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-list>
+    <button ion-item (click)="changeName()">
+      <ion-icon name="contact" item-start></ion-icon>
+      Alterar Nome
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </button>
 
+    <button ion-item (click)="changeEmail()">
+      <ion-icon name="mail" item-start></ion-icon>
+      Alterar Email
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </button>
+
+    <button ion-item (click)="changePassword()">
+      <ion-icon name="lock" item-start></ion-icon>
+      Alterar Senha
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </button>
+
+    <ion-item>
+        <ion-toggle checked="true"></ion-toggle>
+        <ion-label>
+          Notificações
+        </ion-label>
+        <ion-icon name='alert' item-start></ion-icon>
+      </ion-item>
+  </ion-list>
+  
+  <ion-list>
+      <button ion-item (click)="signOut()">
+          <ion-icon name="ios-log-out" item-start></ion-icon>
+          Sair
+          <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+        </button>
+  </ion-list>
 </ion-content>
