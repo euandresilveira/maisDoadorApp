@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registrar Inaptidão</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list radio-group>
+    <ion-list-header>
+      Tipo de Inaptidão
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label> Temporária</ion-label>
+      <ion-radio checked="true" value="Temporaria"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label> Permanente</ion-label>
+      <ion-radio value="Permanente"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-label floating>Dias de Inaptidão</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+</ion-content>
