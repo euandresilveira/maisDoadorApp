@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
 import { ForgotPasswordPage } from '../forgot-password/forgot-password';
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-home',
@@ -17,8 +18,7 @@ password: string;
   }
 
   login(){
-    console.log("Username: " + this.username)
-    console.log("Password: " + this.password)
+    this.navCtrl.push(TabsPage);
   }
 
   gosignup(){

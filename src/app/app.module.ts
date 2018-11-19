@@ -9,6 +9,11 @@ import { HomePage } from '../pages/home/home';
 import { SignupPage } from '../pages/signup/signup';
 import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
 import { ForgotPassword2Page } from '../pages/forgot-password2/forgot-password2';
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { ProfilePage } from '../pages/profile/profile';
+import { TabsPage } from '../pages/tabs/tabs';
+import { RegisterDonationPage } from '../pages/register-donation/register-donation';
+import { AskDonationPage } from '../pages/ask-donation/ask-donation';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { ForgotPassword2Page } from '../pages/forgot-password2/forgot-password2'
     HomePage,
     SignupPage,
     ForgotPasswordPage,
-    ForgotPassword2Page
+    ForgotPassword2Page,
+    DashboardPage,
+    ProfilePage,
+    TabsPage,
+    RegisterDonationPage,
+    AskDonationPage
   ],
   imports: [
     BrowserModule,
@@ -28,8 +38,13 @@ import { ForgotPassword2Page } from '../pages/forgot-password2/forgot-password2'
     HomePage,
     SignupPage,
     ForgotPasswordPage,
-    ForgotPassword2Page
+    ForgotPassword2Page,
 
+    DashboardPage,
+    ProfilePage,
+    TabsPage,
+    RegisterDonationPage,
+    AskDonationPage
   ],
   providers: [
     StatusBar,
