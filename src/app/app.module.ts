@@ -19,6 +19,11 @@ import { ChangeNamePage } from '../pages/change-name/change-name';
 import { ChangeEmailPage } from '../pages/change-email/change-email';
 import { ChangePasswordPage } from '../pages/change-password/change-password';
 import { ListRequestsPage } from '../pages/list-requests/list-requests';
+import { DonationLocationsPage } from '../pages/donation-locations/donation-locations';
+
+import { GoogleMapComponent } from '../components/google-map/google-map';
+
+
 
 
 @NgModule({
@@ -37,7 +42,9 @@ import { ListRequestsPage } from '../pages/list-requests/list-requests';
     ChangeNamePage,
     ChangeEmailPage,
     ChangePasswordPage,
-    ListRequestsPage
+    ListRequestsPage,
+    DonationLocationsPage,
+    GoogleMapComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +66,8 @@ import { ListRequestsPage } from '../pages/list-requests/list-requests';
     ChangeNamePage,
     ChangeEmailPage,
     ChangePasswordPage,
-    ListRequestsPage
+    ListRequestsPage,
+    DonationLocationsPage,
   ],
   providers: [
     StatusBar,

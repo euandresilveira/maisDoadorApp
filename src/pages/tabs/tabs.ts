@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DashboardPage } from '../dashboard/dashboard';
 import { ProfilePage } from '../profile/profile';
 import { ListRequestsPage } from '../list-requests/list-requests';
+import { DonationLocationsPage } from '../donation-locations/donation-locations';
 
 @IonicPage()
 @Component({
@@ -20,4 +21,5 @@ export class TabsPage {
   dashboardPage = DashboardPage;
   profilePage = ProfilePage;
   listRequestsPage = ListRequestsPage;
+  donationLocationsPage = DonationLocationsPage;
 }
