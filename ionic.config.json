@@ -1,5 +1,7 @@
 {
   "name": "maisDoador",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
