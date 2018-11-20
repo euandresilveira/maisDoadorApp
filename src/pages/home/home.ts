@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
 import { ForgotPasswordPage } from '../forgot-password/forgot-password';
 import { TabsPage } from '../tabs/tabs';
@@ -12,13 +12,22 @@ export class HomePage {
 
 username: string;
 password: string;
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController) {
 
 
   }
 
   login(){
-    this.navCtrl.push(TabsPage);
+    let loading = this.loadingCtrl.create({
+      content: 'Por favor, aguarde...'
+    });
+  
+    loading.present();
+  
+    setTimeout(() => {
+      loading.dismiss();
+      this.navCtrl.push(TabsPage);
+    }, 2000);
   }
 
   gosignup(){

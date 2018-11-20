@@ -1,0 +1,19 @@
+<ion-header>
+
+    <ion-navbar color="danger">
+      <ion-title>Alterar Nome</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+
+<ion-content padding center scroll="false">
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating><ion-icon name="contact"></ion-icon> Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="name"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <button ion-button full color="danger" round (click)="salvar()">Salvar</button>
+</ion-content>

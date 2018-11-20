@@ -14,6 +14,12 @@ import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
 import { RegisterDonationPage } from '../pages/register-donation/register-donation';
 import { AskDonationPage } from '../pages/ask-donation/ask-donation';
+import { RegisterInabilityPage } from '../pages/register-inability/register-inability';
+import { ChangeNamePage } from '../pages/change-name/change-name';
+import { ChangeEmailPage } from '../pages/change-email/change-email';
+import { ChangePasswordPage } from '../pages/change-password/change-password';
+import { ListRequestsPage } from '../pages/list-requests/list-requests';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +32,12 @@ import { AskDonationPage } from '../pages/ask-donation/ask-donation';
     ProfilePage,
     TabsPage,
     RegisterDonationPage,
-    AskDonationPage
+    AskDonationPage,
+    RegisterInabilityPage,
+    ChangeNamePage,
+    ChangeEmailPage,
+    ChangePasswordPage,
+    ListRequestsPage
   ],
   imports: [
     BrowserModule,
@@ -39,12 +50,16 @@ import { AskDonationPage } from '../pages/ask-donation/ask-donation';
     SignupPage,
     ForgotPasswordPage,
     ForgotPassword2Page,
-
     DashboardPage,
     ProfilePage,
     TabsPage,
     RegisterDonationPage,
-    AskDonationPage
+    AskDonationPage,
+    RegisterInabilityPage,
+    ChangeNamePage,
+    ChangeEmailPage,
+    ChangePasswordPage,
+    ListRequestsPage
   ],
   providers: [
     StatusBar,

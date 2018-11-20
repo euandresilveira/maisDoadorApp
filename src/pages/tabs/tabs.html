@@ -1,4 +1,5 @@
-<ion-tabs>
-  <ion-tab [root]="dashboardPage" tabTitle="Início" tabIcon="home"></ion-tab>
-  <ion-tab [root]="profilePage" tabTitle="Perfil" tabIcon="person"></ion-tab>
+<ion-tabs [selectedIndex]="mySelectedIndex" color="danger">
+  <ion-tab [root]="dashboardPage" tabIcon="home"></ion-tab>
+  <ion-tab [root]="listRequestsPage" tabIcon="heart"></ion-tab>
+  <ion-tab [root]="profilePage" tabIcon="person"></ion-tab>
 </ion-tabs>

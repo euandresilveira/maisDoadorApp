@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registrar Inaptidão</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding scroll="false">
+  <ion-list radio-group>
+    <ion-list-header>
+      Tipo de Inaptidão
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label> Temporária</ion-label>
+      <ion-radio checked="true" value="Temporaria" (ionSelect)="onChangeTipoInaptidao(0)"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label> Permanente</ion-label>
+      <ion-radio value="Permanente" (ionSelect)="onChangeTipoInaptidao(1)"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <ion-item *ngIf="showDiasInaptidao">
+    <ion-label floating>Dias de Inaptidão</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <br>
+  
+  <div center text-center>
+    <button ion-button  color="danger" round ng-disabled="!buttonEnabled" (click)="salvar()">Salvar</button>
+  </div>
+
+</ion-content>
