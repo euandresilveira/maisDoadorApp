@@ -3,6 +3,7 @@ import { NavController, LoadingController } from 'ionic-angular';
 import { SignupPage } from '../signup/signup';
 import { ForgotPasswordPage } from '../forgot-password/forgot-password';
 import { TabsPage } from '../tabs/tabs';
+import { AboutPage } from '../about/about';
 
 @Component({
   selector: 'page-home',
@@ -37,6 +38,10 @@ password: string;
   
   goforgotPassword(){
     this.navCtrl.push(ForgotPasswordPage);
+  }
+
+  goAbout(){
+    this.navCtrl.push(AboutPage);
   }
 
 

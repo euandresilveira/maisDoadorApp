@@ -1,6 +1,6 @@
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar  color="danger">
     <ion-title>Registrar Inaptidão</ion-title>
   </ion-navbar>
 
@@ -24,11 +24,10 @@
     </ion-item>
   </ion-list>
 
-  <ion-item *ngIf="showDiasInaptidao">
-    <ion-label floating>Dias de Inaptidão</ion-label>
-    <ion-input type="number"></ion-input>
-  </ion-item>
-
+  <ion-item *ngIf="showDiasInaptidao" >
+      <ion-label floating>Dias de Inaptidão</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY"></ion-datetime>
+    </ion-item>
   <br>
   
   <div center text-center>

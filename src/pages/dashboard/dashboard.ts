@@ -25,4 +25,6 @@ export class DashboardPage {
   registerInability(){
     this.navCtrl.push(RegisterInabilityPage);
   }
+
+  
 }
