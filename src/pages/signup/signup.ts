@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController} from 'ionic-angular';
+import { TabsPage } from '../tabs/tabs';
 
 @IonicPage()
 @Component({
@@ -8,7 +9,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SignupPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, 
+     public loadingCtrl: LoadingController) {
   }
 
+
+  
+  login(){
+    let loading = this.loadingCtrl.create({
+      content: 'Por favor, aguarde...'
+    });
+  
+    loading.present();
+  
+    setTimeout(() => {
+      loading.dismiss();
+      this.navCtrl.push(TabsPage);
+    }, 2000);
+  }
 }
+
