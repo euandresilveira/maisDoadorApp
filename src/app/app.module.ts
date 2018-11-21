@@ -22,6 +22,7 @@ import { ListRequestsPage } from '../pages/list-requests/list-requests';
 import { DonationLocationsPage } from '../pages/donation-locations/donation-locations';
 
 import { GoogleMapComponent } from '../components/google-map/google-map';
+import { AboutPage } from '../pages/about/about';
 
 
 
@@ -44,7 +45,8 @@ import { GoogleMapComponent } from '../components/google-map/google-map';
     ChangePasswordPage,
     ListRequestsPage,
     DonationLocationsPage,
-    GoogleMapComponent
+    GoogleMapComponent,
+    AboutPage
   ],
   imports: [
     BrowserModule,
@@ -68,6 +70,8 @@ import { GoogleMapComponent } from '../components/google-map/google-map';
     ChangePasswordPage,
     ListRequestsPage,
     DonationLocationsPage,
+    AboutPage
+
   ],
   providers: [
     StatusBar,
