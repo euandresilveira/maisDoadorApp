@@ -12,8 +12,6 @@
 
 </ion-header>
 
-
-
 <ion-content padding center text-center id="backgroundSignUp" scroll="false">
     <div>
         <img src="../../assets/imgs/Logo1.png" id="logoMaisDoador"/>
@@ -42,6 +40,22 @@
     </ion-item>
   
   </ion-list>
+
+  <ion-list radio-group>
+      <ion-list-header>
+        Sexo
+      </ion-list-header>
+  
+      <ion-item>
+          <ion-label>Masculino</ion-label>
+          <ion-radio checked="true" value="Masculino"></ion-radio>
+        </ion-item>
+      <ion-item>
+        <ion-label>Feminino</ion-label>
+        <ion-radio value="Feminino"></ion-radio>
+      </ion-item>
+    </ion-list>
+  
 <br>
 <hr>
   <ion-list radio-group>
@@ -81,6 +95,6 @@
   </ion-list>
 
 
-  <button ion-button  color="danger" round >Continuar</button>
+  <button ion-button  color="danger" round (click)="login()" >Continuar</button>
 
 </ion-content>
