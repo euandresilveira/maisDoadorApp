@@ -40,9 +40,4 @@ password: string;
     this.navCtrl.push(ForgotPasswordPage);
   }
 
-  goAbout(){
-    this.navCtrl.push(AboutPage);
-  }
-
-
 }

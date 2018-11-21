@@ -13,6 +13,7 @@ export class MyDonationsPage {
 
   showItem = [true, true, true];
   local = ["hcssa", "uccaj", "uchsa"];
+  localDesc = ["Hemocentro Coordenador - Salvador", "UC Hemoba - Sac Cajazeiras", "UC Hemoba - Obras Sociais Irmã Dulce"];
   data = [new Date("19/11/2018"), new Date("31/06/2018"), new Date("06/12/2017")];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {

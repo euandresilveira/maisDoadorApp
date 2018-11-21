@@ -7,6 +7,7 @@ import { HomePage } from '../home/home';
 import { MyRequestsPage } from '../my-requests/my-requests';
 import { MyDonationsPage } from '../my-donations/my-donations';
 import { MyInabilitiesPage } from '../my-inabilities/my-inabilities';
+import { AboutPage } from '../about/about';
 
 @IonicPage()
 @Component({
@@ -53,5 +54,9 @@ export class ProfilePage {
       loading.dismiss();
       this.app.getRootNav().setRoot(HomePage, {}, {animate: true, direction: 'forward'});
     }, 2000);
+  }
+
+  goAbout(){
+    this.navCtrl.push(AboutPage);
   }
 }

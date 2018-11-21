@@ -9,6 +9,8 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class ChangeEmailPage {
 
+  email = "rodrigo@exemplo.com";
+  
   constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {
   }
 

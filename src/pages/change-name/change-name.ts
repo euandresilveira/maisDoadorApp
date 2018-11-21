@@ -10,6 +10,8 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class ChangeNamePage {
 
+  name = "Rodrigo";
+  
   constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {
   }
 
