@@ -9,11 +9,23 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class RegisterDonationPage {
 
+  data = new Date();
+  local = "";
+  index: number;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.data = navParams.get('data');
+    this.local = navParams.get('local');
+    this.index = navParams.get('index');
   }
 
   salvar(){
-    this.navCtrl.push(TabsPage);
+    if(this.index == null){
+      this.navCtrl.push(TabsPage);
+    }
+    else{
+      this.navCtrl.pop();
+    }
   }
 
 }

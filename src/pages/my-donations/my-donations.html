@@ -1,0 +1,69 @@
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Minha Doações</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngIf="showItem[0]">
+      <ion-item>
+        <h2>Local: {{local[0]}}</h2>
+        <ion-note>
+          2d atrás
+        </ion-note>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="light" (click)="editar(0)">
+          <ion-icon name="create"></ion-icon>
+          Editar
+        </button>
+        <button ion-button color="danger" (click)="excluir(0)">
+          <ion-icon name="trash"></ion-icon>
+          Excluir
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding *ngIf="showItem[1]">
+      <ion-item>
+        <h2>Local: {{local[1]}}</h2>
+        <ion-note>
+          21/06/2018
+        </ion-note>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="light" (click)="editar(1)">
+          <ion-icon name="create"></ion-icon>
+          Editar
+        </button>
+        <button ion-button color="danger" (click)="excluir(1)">
+          <ion-icon name="trash"></ion-icon>
+          Excluir
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding *ngIf="showItem[2]">
+      <ion-item>
+        <h2>Local: {{local[2]}}</h2>
+        <ion-note>
+          06/12/2017
+        </ion-note>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="light" (click)="editar(2)">
+          <ion-icon name="create"></ion-icon>
+          Editar
+        </button>
+        <button ion-button color="danger" (click)="excluir(2)">
+          <ion-icon name="trash"></ion-icon>
+          Excluir
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

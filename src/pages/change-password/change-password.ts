@@ -15,13 +15,13 @@ export class ChangePasswordPage {
   salvar(){
     let toast = this.toastCtrl.create({
       message: 'Salvo com sucesso!',
-      duration: 3000,
+      duration: 1500,
       position: 'bottom'
     });
   
     toast.present();
 
-    this.navCtrl.setRoot(TabsPage, {tabIndex: 2});
+    this.navCtrl.setRoot(TabsPage, {tabIndex: 3});
   }
 
 }

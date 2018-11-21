@@ -1,27 +1,29 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
+import { RegisterInabilityPage } from '../register-inability/register-inability';
 
 @IonicPage()
 @Component({
-  selector: 'page-change-email',
-  templateUrl: 'change-email.html',
+  selector: 'page-my-inabilities',
+  templateUrl: 'my-inabilities.html',
 })
-export class ChangeEmailPage {
+export class MyInabilitiesPage {
+
+  showItem = [true, true];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private toastCtrl: ToastController) {
   }
 
-  salvar(){
+  excluir(index: number){
     let toast = this.toastCtrl.create({
-      message: 'Salvo com sucesso!',
+      message: 'Removido com sucesso!',
       duration: 1500,
       position: 'bottom'
     });
   
     toast.present();
 
-    this.navCtrl.setRoot(TabsPage, {tabIndex: 3});
+    this.showItem[index] = false;
   }
 
 }

@@ -20,8 +20,10 @@ import { ChangeEmailPage } from '../pages/change-email/change-email';
 import { ChangePasswordPage } from '../pages/change-password/change-password';
 import { ListRequestsPage } from '../pages/list-requests/list-requests';
 import { DonationLocationsPage } from '../pages/donation-locations/donation-locations';
-
 import { GoogleMapComponent } from '../components/google-map/google-map';
+import { MyDonationsPage } from '../pages/my-donations/my-donations';
+import { MyRequestsPage } from '../pages/my-requests/my-requests';
+import { MyInabilitiesPage } from '../pages/my-inabilities/my-inabilities';
 import { AboutPage } from '../pages/about/about';
 
 
@@ -46,6 +48,9 @@ import { AboutPage } from '../pages/about/about';
     ListRequestsPage,
     DonationLocationsPage,
     GoogleMapComponent,
+    MyDonationsPage,
+    MyRequestsPage,
+    MyInabilitiesPage,
     AboutPage
   ],
   imports: [
@@ -70,8 +75,10 @@ import { AboutPage } from '../pages/about/about';
     ChangePasswordPage,
     ListRequestsPage,
     DonationLocationsPage,
+    MyDonationsPage,
+    MyRequestsPage,
+    MyInabilitiesPage,
     AboutPage
-
   ],
   providers: [
     StatusBar,

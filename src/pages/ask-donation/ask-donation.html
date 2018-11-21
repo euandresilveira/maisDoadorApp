@@ -10,13 +10,13 @@
 
     <ion-item>
       <ion-label floating>Nome do Paciente</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" [(ngModel)]="nome" ></ion-input>
     </ion-item>
   
     <ion-list>
       <ion-item>
         <ion-label floating>Local da Doação</ion-label>
-        <ion-select >
+        <ion-select [(ngModel)]="local">
           <ion-option value="hcssa">Hemocentro Coordenador - Salvador</ion-option>
           <ion-option value="uchsa">UC Hemoba - Hospital Santo Antônio/Obras Sociais Irmã Dulce - Salvador</ion-option>
           <ion-option value="uchs">UC Hemoba - Hospital do Subúrbio - Salvador</ion-option>

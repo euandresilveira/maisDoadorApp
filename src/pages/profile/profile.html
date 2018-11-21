@@ -7,11 +7,30 @@
 </ion-header>
 
 
-<ion-content padding id = "backgroundDash">
+<ion-content padding id="backgroundDash">
   <ion-list>
-    <ion-list-header>
+    <button ion-item (click)="myRequests()">
+      <ion-icon name="megaphone" item-start></ion-icon>
+      Minhas Solicitações
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </button>
+    <button ion-item (click)="myDonations()">
+      <ion-icon name="heart" item-start></ion-icon>
+      Minhas Doações
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </button>
+    <button ion-item (click)="myInabilities()">
+      <ion-icon name="clock" item-start></ion-icon>
+      Minhas Inaptidões
+      <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+    </button>
+  </ion-list>
+
+
+  <ion-list>
+    <!-- <ion-list-header>
       Configurações
-    </ion-list-header>
+    </ion-list-header> -->
     <button ion-item (click)="changeName()">
       <ion-icon name="contact" item-start></ion-icon>
       Alterar Nome
