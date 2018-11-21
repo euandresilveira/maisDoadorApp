@@ -4,6 +4,9 @@ import { ChangeNamePage } from '../change-name/change-name';
 import { ChangeEmailPage } from '../change-email/change-email';
 import { ChangePasswordPage } from '../change-password/change-password';
 import { HomePage } from '../home/home';
+import { MyRequestsPage } from '../my-requests/my-requests';
+import { MyDonationsPage } from '../my-donations/my-donations';
+import { MyInabilitiesPage } from '../my-inabilities/my-inabilities';
 
 @IonicPage()
 @Component({
@@ -25,6 +28,18 @@ export class ProfilePage {
 
   changePassword(){
     this.navCtrl.push(ChangePasswordPage);
+  }
+
+  myRequests(){
+    this.navCtrl.push(MyRequestsPage);
+  }
+
+  myDonations(){
+    this.navCtrl.push(MyDonationsPage);
+  }
+
+  myInabilities(){
+    this.navCtrl.push(MyInabilitiesPage);
   }
 
   signOut(){

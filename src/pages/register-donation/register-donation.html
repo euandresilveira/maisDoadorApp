@@ -10,13 +10,13 @@
 
     <ion-item>
       <ion-label floating>Data da Doação</ion-label>
-      <ion-datetime displayFormat="DD/MM/YYYY"></ion-datetime>
+      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="data"></ion-datetime>
     </ion-item>
   
     <ion-list>
       <ion-item>
         <ion-label floating>Local da Doação</ion-label>
-        <ion-select >
+        <ion-select [(ngModel)]="local">
           <ion-option value="hcssa">Hemocentro Coordenador - Salvador</ion-option>
           <ion-option value="uchsa">UC Hemoba - Hospital Santo Antônio/Obras Sociais Irmã Dulce - Salvador</ion-option>
           <ion-option value="uchs">UC Hemoba - Hospital do Subúrbio - Salvador</ion-option>
